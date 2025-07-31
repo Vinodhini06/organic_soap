@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Soap - Natural Handmade Soaps</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <img src="images/logo.svg" alt="Organic Soap Logo" class="h-10">
+                    <span class="font-bold text-xl">Organic Soap</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-green-200 font-medium">Home</a>
+                    <a href="products.html" class="hover:text-green-200 font-medium">Products</a>
+                    <a href="portfolio.html" class="hover:text-green-200 font-medium">Portfolio</a>
+                    <a href="about.html" class="hover:text-green-200 font-medium">About Us</a>
+                    <a href="contact.html" class="hover:text-green-200 font-medium">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-green-200"><i class="fas fa-shopping-cart"></i></a>
+                    <button class="md:hidden focus:outline-none" id="menu-toggle">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-4 space-y-1 bg-green-700">
+                <a href="index.html" class="block px-3 py-2 hover:bg-green-800 rounded">Home</a>
+                <a href="products.html" class="block px-3 py-2 hover:bg-green-800 rounded">Products</a>
+                <a href="portfolio.html" class="block px-3 py-2 hover:bg-green-800 rounded">Portfolio</a>
+                <a href="about.html" class="block px-3 py-2 hover:bg-green-800 rounded">About Us</a>
+                <a href="contact.html" class="block px-3 py-2 hover:bg-green-800 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('download.jfif');">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="text-white max-w-2xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Pure & Natural Handcrafted Soaps</h1>
+                <p class="text-xl mb-8">Made with organic ingredients for a healthier skin and a cleaner planet.</p>
+                <div class="flex space-x-4">
+                    <a href="products.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Shop Now</a>
+                    <a href="about.html" class="bg-transparent hover:bg-white hover:text-green-600 text-white font-bold py-3 px-6 border-2 border-white rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Soap Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="download.jfif" alt="Floral Soaps" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Floral Soaps</h3>
+                        <p class="text-gray-600 mb-4">Infused with natural flower extracts for a refreshing experience.</p>
+                        <a href="products.html#floral" class="text-green-600 hover:text-green-800 font-medium">View Collection →</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="download (1).jfif" alt="Herbal Soaps" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Herbal Soaps</h3>
+                        <p class="text-gray-600 mb-4">Made with medicinal herbs to nourish and heal your skin naturally.</p>
+                        <a href="products.html#herbal" class="text-green-600 hover:text-green-800 font-medium">View Collection →</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="download (2).jfif" alt="Exfoliating Soaps" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Exfoliating Soaps</h3>
+                        <p class="text-gray-600 mb-4">Gentle scrubs to remove dead skin cells and reveal glowing skin.</p>
+                        <a href="products.html#exfoliating" class="text-green-600 hover:text-green-800 font-medium">View Collection →</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <img src="download.jfif" alt="Essential Oil Soaps" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Essential Oil Soaps</h3>
+                        <p class="text-gray-600 mb-4">Aromatherapy benefits with pure essential oils for mind and body.</p>
+                        <a href="products.html#essential" class="text-green-600 hover:text-green-800 font-medium">View Collection →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Our Best Sellers</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Discover our most popular handcrafted soaps loved by customers worldwide.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="download.jfif" alt="Lavender Bliss" class="w-full h-72 object-cover">
+                        <span class="absolute top-4 right-4 bg-green-600 text-white text-sm font-bold px-3 py-1 rounded-full">Best Seller</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Lavender Bliss</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">4.5 (128)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Calming lavender soap that soothes your skin and mind.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-green-600">$8.99</span>
+                            <button class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="download (1).jfif" alt="Honey Oatmeal" class="w-full h-72 object-cover">
+                        <span class="absolute top-4 right-4 bg-green-600 text-white text-sm font-bold px-3 py-1 rounded-full">Best Seller</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Honey Oatmeal</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">5.0 (94)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Gentle exfoliation with natural oatmeal and nourishing honey.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-green-600">$9.99</span>
+                            <button class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="download (2).jfif" alt="Eucalyptus Mint" class="w-full h-72 object-cover">
+                        <span class="absolute top-4 right-4 bg-green-600 text-white text-sm font-bold px-3 py-1 rounded-full">Best Seller</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Eucalyptus Mint</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">4.0 (76)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Refreshing and invigorating soap perfect for morning showers.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-green-600">$8.49</span>
+                            <button class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition duration-300">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Are Best Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Why We Are The Best</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Our commitment to quality and sustainability sets us apart in the industry.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">100% Organic</h3>
+                    <p class="text-gray-600">We use only certified organic ingredients sourced from trusted farmers.</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-ban text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">No Chemicals</h3>
+                    <p class="text-gray-600">Free from parabens, sulfates, and other harmful chemicals found in commercial soaps.</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-recycle text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Eco-Friendly</h3>
+                    <p class="text-gray-600">Sustainable practices and biodegradable packaging to minimize environmental impact.</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Handcrafted</h3>
+                    <p class="text-gray-600">Each soap is made by hand with care and attention to detail for superior quality.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="download.jfif" alt="Our Soap Making Process" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12 flex items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Our Artisanal Process</h3>
+                            <p class="text-gray-600 mb-6">We follow traditional cold-process soap making techniques that preserve the natural goodness of our ingredients. Our small-batch production ensures quality control and allows us to infuse each bar with intention and purpose.</p>
+                            <ul class="space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mt-1 mr-2"></i>
+                                    <span>Carefully selected organic ingredients</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mt-1 mr-2"></i>
+                                    <span>4-6 week curing process for perfect soap bars</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mt-1 mr-2"></i>
+                                    <span>Small batch production for quality assurance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 mt-1 mr-2"></i>
+                                    <span>Rigorous testing for safety and effectiveness</span>
+                                </li>
+                            </ul>
+                            <a href="about.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Learn More About Our Process</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">What Our Customers Say</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Read testimonials from our satisfied customers around the world.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I've been using Organic Soap products for over a year now, and my skin has never been better. The Lavender Bliss soap has helped calm my sensitive skin and reduce redness."</p>
+                    <div class="flex items-center">
+                        <img src="download.jfif" alt="Customer" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As someone with eczema, finding gentle skincare products is challenging. The Honey Oatmeal soap has been a game-changer for me. It soothes my skin without any irritation."</p>
+                    <div class="flex items-center">
+                        <img src="download (1).jfif" alt="Customer" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Michael Rodriguez</h4>
+                            <p class="text-gray-500 text-sm">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"I love that these soaps are not only good for my skin but also for the environment. The packaging is minimal and eco-friendly, and the soaps themselves last much longer than commercial brands."</p>
+                    <div class="flex items-center">
+                        <img src="download (2).jfif" alt="Customer" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-semibold">Emily Chen</h4>
+                            <p class="text-gray-500 text-sm">Eco-conscious Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-transparent hover:bg-green-600 text-green-600 hover:text-white font-bold py-3 px-8 border-2 border-green-600 hover:border-transparent rounded-lg transition duration-300">Read More Reviews</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="py-16 bg-green-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+                <p class="mb-8">Stay updated with our latest products, special offers, and skincare tips.</p>
+                <form class="flex flex-col md:flex-row gap-4 justify-center">
+                    <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg focus:outline-none text-gray-800 w-full md:w-96">
+                    <button type="submit" class="bg-white text-green-600 hover:bg-green-100 font-bold py-3 px-6 rounded-lg transition duration-300">Subscribe</button>
+                </form>
+                <p class="mt-4 text-sm text-green-200">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="images/logo-white.svg" alt="Organic Soap Logo" class="h-8">
+                        <span class="font-bold text-xl">Organic Soap</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Handcrafted organic soaps made with love and care for your skin and the environment.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition duration-300">Shop All</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Returns & Refunds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-green-500"></i>
+                            <span class="text-gray-400">123 Organic Way, Green Valley, CA 94123</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-2 text-green-500"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-green-500"></i>
+                            <span class="text-gray-400">info@organicsoap.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-2 text-green-500"></i>
+                            <span class="text-gray-400">Mon-Fri: 9AM-5PM, Sat: 10AM-4PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Organic Soap. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <img src="images/payment-visa.svg" alt="Visa" class="h-8">
+                        <img src="images/payment-mastercard.svg" alt="Mastercard" class="h-8">
+                        <img src="images/payment-paypal.svg" alt="PayPal" class="h-8">
+                        <img src="images/payment-apple.svg" alt="Apple Pay" class="h-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
